@@ -592,7 +592,7 @@ label {
   /* margin: 0 -4px; */
 }
 
-.alternative-payment-methods.selector {
+.alternative-payment-methods#selector {
   padding: 0 10px 20px 10px;
 }
 
@@ -627,7 +627,7 @@ label {
   padding-left: 4px;
 }
 
-.selector .payment-method .btn {
+#selector .payment-method .btn {
   min-height: auto;
 }
 
