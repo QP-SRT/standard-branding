@@ -1,4 +1,4 @@
-<div id="selector" class="container text-center alternative-payment-methods">
+<div id="alternative-payment-methods" class="container text-center selector alternative-payment-methods">
   <h4>Select Payment Method</h4>
   {% for method in model.payment_methods %}
     {% include "payment_methods_list" method=method %}
