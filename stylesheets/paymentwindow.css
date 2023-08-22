@@ -176,7 +176,7 @@ while col-(screen size)-1 takes up a twelth of the row */
 }
 
 /* --- Footer --- */ 
-#footer #bottom-bar {
+#bottom-bar {
   position: fixed;
   bottom: 0px;
   width: 100%;
@@ -195,7 +195,7 @@ while col-(screen size)-1 takes up a twelth of the row */
   vertical-align: middle;
 } */
 
-#footer #bottom-bar img.footer-logo {
+img.footer-logo {
   height: 18px;
 }
 
@@ -203,7 +203,7 @@ while col-(screen size)-1 takes up a twelth of the row */
   font-size: 12px;
 }
 
-#language-toggle span, #gateway-toggle span{
+#language-toggle span, #gateway-toggle span {
   vertical-align: middle;
 }
 
@@ -212,8 +212,8 @@ while col-(screen size)-1 takes up a twelth of the row */
   color: #888888;
 }
 
-#footer #gateway-info,
-#footer #language-selector {
+#gateway-info,
+#language-selector {
   position: fixed;
   bottom: 39px;
   width: 100%;
@@ -230,21 +230,21 @@ while col-(screen size)-1 takes up a twelth of the row */
   border-top: 5px solid #efefef;
 } */
 
-#footer #gateway-info #gateway-info-inner #gateway-description,
-#footer #language-selector #language-selector-inner #language-list {
+#gateway-description, 
+#language-list {
   padding: 30px 0 20px 0;
-  margin: 0 -15px;
+  margin: 0 -10px;
 }
 
-#footer #language-selector #language-selector-inner #language-list a {
+#language-list a {
   color: inherit;
   padding-top: 4px;
   padding-bottom: 4px;
   display: inline-block;
 }
 
-#footer #gateway-info button,
-#footer #language-selector button {
+#gateway-info button,
+#language-selector button {
   background: #efefef;
   border: 0;
   border-top-left-radius: 0;
@@ -262,6 +262,10 @@ while col-(screen size)-1 takes up a twelth of the row */
 @media (min-width: 481px) {
   #bottom-bar .col-xs-8, #bottom-bar .col-xs-4 {
     padding: 0;
+  }
+
+  #gateway-description, #language-list {
+    margin: 0 -25px;
   }
 }
 
@@ -359,19 +363,23 @@ a.btn, button[type="submit"] {
   border-bottom: 1px solid #e9e9e9;
 }
 
-.header img#merchant-logo {
+img#merchant-logo {
   max-width: 100%;
 }
 
-.header #merchant-logo {
+#merchant-logo {
   padding: 10px;
 }
 
-.header #merchant-name {
+#merchant-name {
   font-size: 24px;
   line-height: 1.1em;
   word-break: break-word;
   margin: 0 0 3px 0;
+}
+
+.header-content #merchant-name {
+  font-size: 26px;
 }
 
 .header-content {
@@ -408,7 +416,7 @@ a.btn, button[type="submit"] {
 }
 
 @media (max-width: 480px) {
-  .header h1#merchant-name {
+  #merchant-name {
     font-size: 22px;
   }
 
@@ -581,7 +589,7 @@ label {
 
 .alternative-payment-methods {
   padding: 15px;
-  margin: 0 -4px;
+  /* margin: 0 -4px; */
 }
 
 .alternative-payment-methods#selector {
@@ -591,6 +599,7 @@ label {
 @media (min-width: 481px) {
   .alternative-payment-methods {
     padding: 20px 0px;
+    margin: 0 -4px;
   }
 }
 
@@ -644,7 +653,7 @@ label {
 
 .apple-pay-btn {
   display: block;
-  background-image: -webkit-named-image(apple-pay-logo-black);
+  background-image: -webkit-named-image(apple-pay-logo-black); /*MLO - Is this something that's only supported in Safari?*/
   background-color: #ffffff;
   background-size: 100% 75%;
   background-repeat: no-repeat;

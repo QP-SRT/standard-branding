@@ -3,10 +3,7 @@
     {% if method.name == "apple-pay" %}
       <div class="apple-pay-btn" title="{{ method.nice_name }}"></div>
     {% else %}
-      <img
-        src="{{ method.image_path }}"
-        alt="{{ method.nice_name }}"
-        title="{{ method.nice_name }}" />
+      <img src="{{ method.image_path }}" alt="{{ method.nice_name }}" />
     {% endif %}
   </a>
 </div>
