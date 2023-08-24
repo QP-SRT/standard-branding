@@ -196,7 +196,7 @@
           {{ button_text }}
         </button>
         {% if model.calculate_fee %}
-          <p id="fee" class="text-center">
+          <p id="fee">
             {% t Payment fee %}:
             <span id="fee-field">
               <i>{% t Fill in card number %}</i>
@@ -207,7 +207,7 @@
           <hr/>
         {% endif %}
         {% if config.reservation_notice %}
-          <div class="reservation-notice">{{ config.reservation_notice }}</div>
+          <div id="reservation-notice">{{ config.reservation_notice }}</div>
         {% endif %}
       </div>
     </div>
